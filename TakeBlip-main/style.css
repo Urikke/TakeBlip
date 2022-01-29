@@ -1,5 +1,7 @@
 body{
     background-color: rgb(100, 171, 192);
+    max-width: 900px;
+    margin: auto;
 }
 
 #foto1{
@@ -35,6 +37,7 @@ body{
     background-color: rgb(188, 247, 247);
     border-radius: 0 10px;
     font-family: Helvetica, Arial, sans-serif;
+    text-align: justify;
 }
 
 .post_img{
@@ -42,4 +45,15 @@ body{
     margin: 0;
     margin-bottom: 15px;
     border-radius: 0 10px;
+}
+
+.contacts_list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contacts_list li a{
+    color:rgb(44, 60, 151);
+    font-style: normal;
 }
