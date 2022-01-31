@@ -1,7 +1,8 @@
 :root{
     --laranja: #CC7722;
     --laranja-hover: #f79b3f;
-    --preta: #28282B; 
+    --preta: #28282B;
+    --preta-black: #1f1f20; 
     --branca: #ffffff;
     --nav: #cccccc;
 }
@@ -32,10 +33,38 @@ header .home{
     text-decoration: none;
 }
 
+header .box-home{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+}
+
 header .logo{
     margin-left: 5px;
+    margin-right: 20px;
     font-style: italic;
     color: var(--laranja); 
+}
+
+header .pesquisa{
+    margin-left: 5px;
+    margin-right: 40px;
+    background-color: var(--preta);
+    border-style: solid;
+    border-color: var(--preta-black);
+    border-radius: 3px;
+}
+
+header .pesquisa:hover{
+    background-color: var(--nav);
+}
+
+header .pesquisa:focus{
+    background-color: var(--branca);
+}
+
+header nav{
+    align-items: center;
 }
 
 header nav a{
@@ -52,7 +81,7 @@ header nav a:hover{
 
 .jogo-principal{
     font-size: 16px;
-    background: linear-gradient(to left, transparent, var(--preta)), url('/img/jogo-principal.jpg');
+    background: linear-gradient(to left, transparent, var(--preta)), url('/img/aovivo/jogo-principal.jpg');
 
     height: 400px;
     background-size: cover;
@@ -65,7 +94,6 @@ header nav a:hover{
 
 .jogo-principal .descricao{
     margin-bottom: 30px;
-    width: 80%;
 }
 
 .container{
@@ -90,3 +118,38 @@ header nav a:hover{
     background-color: var(--laranja-hover);
 }
 
+.box-jogo{
+    height: 100%;
+    width: 100%;
+    margin-top: 10px;
+    display: block;
+}
+
+.item img {
+    max-width: 100%;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    z-index: 1;
+}
+
+.item:hover img {
+    -moz-transform: scale(1.08);
+    -webkit-transform: scale(1.08);
+    transform: scale(1.08);
+}
+
+.carrosel-aovivo{
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bolder;
+    color:var(--laranja);
+}
+
+.carrosel-aovivo .owl-carousel .item{
+    font-size: 16px;
+    font-weight: normal;
+    color:var(--branca);
+}
