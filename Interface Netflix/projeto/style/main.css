@@ -1,0 +1,92 @@
+:root{
+    --laranja: #CC7722;
+    --laranja-hover: #f79b3f;
+    --preta: #28282B; 
+    --branca: #ffffff;
+    --nav: #cccccc;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Base*/
+
+body{
+    background-color: var(--preta);
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    color:var(--branca);
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .home{
+    text-decoration: none;
+}
+
+header .logo{
+    margin-left: 5px;
+    font-style: italic;
+    color: var(--laranja); 
+}
+
+header nav a{
+    text-decoration: none;
+    color: var(--nav);
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: var(--branca);
+}
+
+/*Jogo Principal*/
+
+.jogo-principal{
+    font-size: 16px;
+    background: linear-gradient(to left, transparent, var(--preta)), url('/img/jogo-principal.jpg');
+
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    align-items: flex-start;
+}
+
+.jogo-principal .descricao{
+    margin-bottom: 30px;
+    width: 80%;
+}
+
+.container{
+    padding: 20px;
+}
+
+.titulo{
+    font-size: 30px;
+}
+
+.botao{
+    background-color: var(--laranja);
+    border: none;
+    border-radius: 10px 0 10px 0;
+    padding: 10px 20px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: var(--laranja-hover);
+}
+
