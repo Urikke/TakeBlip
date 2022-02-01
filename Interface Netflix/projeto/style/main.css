@@ -1,10 +1,10 @@
 :root{
-    --laranja: #CC7722;
-    --laranja-hover: #f79b3f;
-    --preta: #28282B;
+    --laranja: #fb590e;
+    --laranja-hover: #ff854d;
+    --preta: #171217;
     --preta-black: #1f1f20; 
     --branca: #ffffff;
-    --nav: #cccccc;
+    --nav: #96939b;
 }
 
 *{
@@ -82,7 +82,7 @@ header nav a:hover{
 .jogo-principal{
     font-size: 16px;
     background: linear-gradient(to left, transparent, var(--preta)), url('/img/aovivo/jogo-principal.jpg');
-
+    
     height: 400px;
     background-size: cover;
 
@@ -125,12 +125,25 @@ header nav a:hover{
     display: block;
 }
 
+.carrosel{
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bolder;
+    color:var(--laranja);
+}
+
+.item {
+    font-size: 14px;
+    font-weight: normal;
+    color:var(--branca);
+}
+
 .item img {
     max-width: 100%;
+    border-radius: 10px 0 10px 0;
     -moz-transition: all 0.5s;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
-    z-index: 1;
 }
 
 .item:hover img {
@@ -139,17 +152,31 @@ header nav a:hover{
     transform: scale(1.08);
 }
 
-.carrosel-aovivo{
-    padding: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 30px;
-    font-weight: bolder;
-    color:var(--laranja);
+.nome-jogo{
+    font-size: 16px;
+    margin-top: 10px;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
 }
 
-.carrosel-aovivo .owl-carousel .item{
+.item:hover .nome-jogo{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.owl-carousel{
+    display: flex;
+    flex-direction: column;
+}
+
+.player{
+    width: 100vw;
+    height: 100vh;
+}
+
+.play{
+    text-decoration: none;
+    color: var(--branca);
     font-size: 16px;
-    font-weight: normal;
-    color:var(--branca);
 }
